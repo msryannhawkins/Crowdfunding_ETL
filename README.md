@@ -17,7 +17,7 @@ To do this, we exported the category DataFrame as category.csv and extracted and
     *A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
     *A "subcategory" column that contains only the subcategory titles
 
-[alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF1.png
+![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF1.png
  "DF1")
 
 After we exported the subcategory DataFrame as subcategory.csv, we extracted and transformed the crowdfunding.xlsx Excel data and created a campaign DataFrame has the following columns:
@@ -36,7 +36,7 @@ After we exported the subcategory DataFrame as subcategory.csv, we extracted and
     *The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
     *The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
 
-[alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF2.png
+![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF2.png
  "DF2")
 
 Lastly, we needed to create the Contacts DataFrame. To do this, the following were the steps that we took to use Python dictionary.
@@ -49,12 +49,12 @@ Lastly, we needed to create the Contacts DataFrame. To do this, the following we
     *Split each "name" column value into a first and last name, and place each in a new column.
     *Clean and export the DataFrame as contacts.csv and saved it to your GitHub repository.
 
-[alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF3.png
+![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF3.png
  "DF3")
 
 In our final portion of the project, we inspected the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks. We then used the information from the ERD to create a table schema for each CSV file. It was helpful to remember to specify the data types, primary keys, foreign keys, and other constraints.
 
-[alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DBD%20Crowdfunding.png
+![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DBD%20Crowdfunding.png
  "ERD")
 
 We saved the database schema as a Postgres file named crowdfunding_db_schema.sql, and saved it to our GitHub repository. We create a new Postgres database, named crowdfunding_db. Using the database schema, we were able to create the tables in the correct order to handle the foreign keys. We verified the table creation by running a SELECT statement for each table. We imported each CSV file into its corresponding SQL table and verified that each table had the correct data by running a SELECT statement for each.
