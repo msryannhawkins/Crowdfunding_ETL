@@ -13,7 +13,7 @@ Our goal was to extract and transform the crowdfunding.xlsx Excel data to create
       *A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
       *A "category" column that contains only the category titles
 
-To do this, we exported the category DataFrame as category.csv and extracted and transformed the crowdfunding.xlsx Excel data. We used this daya to create a subcategory DataFrame that had the following columns:
+To do this, we exported the category DataFrame as category.csv and extracted and transformed the crowdfunding.xlsx Excel data. We used this data to create a subcategory DataFrame that had the following columns:
     *A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories
     *A "subcategory" column that contains only the subcategory titles
 
@@ -52,12 +52,12 @@ Lastly, we needed to create the Contacts DataFrame. To do this, the following we
 ![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DF_Images/DF3.png
  "DF3")
 
-In our final portion of the project, we inspected the four CSV files, and then sketch an ERD of the tables by using QuickDBDLinks. We then used the information from the ERD to create a table schema for each CSV file. It was helpful to remember to specify the data types, primary keys, foreign keys, and other constraints.
+In our final portion of the project, we inspected the four CSV files, and then sketched an ERD of the tables by using QuickDBDLinks. We then used the information from the ERD to create a table schema for each CSV file. It was helpful to remember to specify the data types, primary keys, foreign keys, and other constraints.
 
 ![alt text](https://github.com/msryannhawkins/Crowdfunding_ETL/blob/main/Starter_Files/DBD%20Crowdfunding.png
  "ERD")
 
-We saved the database schema as a Postgres file named crowdfunding_db_schema.sql, and saved it to our GitHub repository. We create a new Postgres database, named crowdfunding_db. Using the database schema, we were able to create the tables in the correct order to handle the foreign keys. We verified the table creation by running a SELECT statement for each table. We imported each CSV file into its corresponding SQL table and verified that each table had the correct data by running a SELECT statement for each.
+We saved the database schema as a Postgres file named crowdfunding_db_schema.sql, and saved it to our GitHub repository. We created a new Postgres database, named crowdfunding_db. Using the database schema, we were able to create the tables in the correct order to handle the foreign keys. We verified the table creation by running a SELECT statement for each table. We imported each CSV file into its corresponding SQL table and verified that each table had the correct data by running a SELECT statement for each.
 
 We found it helpful to do the following throughout this project.
     *To split each "category & sub-category" column value into "category" and "subcategory" column values, use df[["new_column1","new_column2"]] = df["column"].str.split(). Make sure to pass the correct parameters to the split() function.
