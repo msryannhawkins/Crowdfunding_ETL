@@ -1,6 +1,6 @@
 # Crowdfunding_ETL
 
-For the ETL mini project, we practiced building an ETL pipeline using Python, Pandas, and either Python dictionary methods to extract and transform the data. After we transformed the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database. Although we divided the work, it was essential to collaborate and communicate while working on different parts of the project. We made it a point to check in with each other regularly and offer support.
+For the ETL mini project, we practiced building an ETL pipeline using Python, Pandas, and Python dictionary methods to extract and transform the data. After we transformed the data, we created four CSV files and used the CSV file data to create an ERD and a table schema. Finally, we uploaded the CSV file data into a Postgres database. Although we divided the work, it was essential to collaborate and communicate while working on different parts of the project. We made it a point to check in with each other regularly and offer support.
 
 To help us get started, we downloaded the starter code and files provided to us by our BootCamp. The instructions for this mini project a divided into the following subsections:
     *Create the Category and Subcategory DataFrames
